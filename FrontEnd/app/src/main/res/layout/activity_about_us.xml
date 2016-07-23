@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="application.com.krise.views.AboutUs">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:padding="30dp"
+        android:text="Developed by ATeam"/>
+
+    <TextView
+        android:id="@+id/android"
+        android:layout_below="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="Android front-end and Back-end"/>
+
+    <TextView
+        android:id="@+id/team_android"
+        android:layout_below="@+id/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:text="Harsh, Pratik"/>
+
+    <TextView
+        android:id="@+id/backend"
+
+        android:layout_below="@+id/team_android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="Android and Database development"/>
+
+    <TextView
+        android:id="@+id/team_backend"
+
+        android:layout_below="@+id/backend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:text="Himanshu"/>
+
+
+    <TextView
+        android:id="@+id/wireframe"
+        android:layout_below="@+id/team_backend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="Android front-end and Back-end"/>
+
+    <TextView
+        android:id="@+id/team_wireframe"
+        android:layout_below="@+id/wireframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:text="Mohit"/>
+</RelativeLayout>

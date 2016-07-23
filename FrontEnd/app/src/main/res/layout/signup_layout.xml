@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/zhl"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/page_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/black_trans_twenty" >
+
+        <TextView
+            android:id="@+id/page_header_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="X"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/size15"
+            android:textSize="@dimen/drawer_iconview_size" />
+
+        <TextView
+            android:id="@+id/page_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textAllCaps="true"
+            android:text="@string/signup"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size30" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/page_header"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_trans_seventy"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/login_email_details"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="60dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size10">
+
+                <View
+                    android:id="@+id/email_login_separator1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_toLeftOf="@+id/help_string"
+                    android:background="@color/white_trans_ten"
+                    android:gravity="left|center_vertical" />
+
+                <TextView
+                    android:id="@+id/help_string"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent1"
+                    android:gravity="center"
+                    android:text="@string/signup"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size14" />
+
+                <View
+                    android:id="@+id/email_login_separator2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_toRightOf="@id/help_string"
+                    android:background="@color/white_trans_ten"
+                    android:gravity="right|center_vertical" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/login_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/login_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black_trans_ten"
+                    android:hint="@string/edit_name_hint"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:padding="@dimen/size10"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_trans_eighty"
+                    android:textSize="@dimen/size15" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white_trans_ten" />
+
+                <EditText
+                    android:id="@+id/login_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black_trans_ten"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/size10"
+                    android:textColorHint="@color/white_trans_eighty"
+                    android:textSize="@dimen/size16" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white_trans_ten" />
+
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black_trans_ten"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/size10"
+                    android:textColorHint="@color/white_trans_eighty"
+                    android:textSize="@dimen/size16" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_trans_ten"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/login_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size10"
+                android:background="@drawable/black_button_border"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/submit_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:padding="@dimen/size10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size15" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/login_page_already_have_an_account"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/already_have_account"
+                android:textColor="@color/white_trans_seventy"
+                android:textSize="@dimen/size14" />
+
+            <View
+                android:id="@+id/login_blank_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/terms_of_service_separator"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_weight=".1"
+                android:background="@color/transparent1" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+{% extends "_base.html" %}
+{% block content %}
+
+<form action="/pushnotif" method="GET">
+  <input type="text" name="impact" value="4" placeholder="impact" /> 
+  <input type="text" name="precaution" value="be safe" placeholder="precaution" /> 
+  <input type="text" name="serverlat" value="28.5434437" placeholder="serverlat" />
+  <input type="text" name="serverlon" value="77.3489714" placeholder="serverlon" />
+
+  <input type="submit" /> 
+</form>
+
+<br>
+<p><a href="/logout">Logout</a>
+
+{% endblock %}

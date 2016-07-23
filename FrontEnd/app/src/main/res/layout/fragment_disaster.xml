@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <!-- Map in background -->
+            <fragment
+                android:id="@+id/map"
+                class="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Precautions\n"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/instructions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="* Pack a bag with important items in case you need to evacuate.\n\n* Don't forget to include needed medications.\n\n* Turn off utilities at the main switches or valves if instructed to do so. Disconnect electrical appliances.
+                \n* Do not walk through moving water. As little as 6 inches (15 centimeters) of moving water can make you fall.
+\n* If you have to walk in water, wherever possible, walk where the water is not moving. Use a stick to check the firmness of the ground in front of you.
+\n* Do not drive into flooded areas. If floodwaters rise around your car, abandon the car and move to higher ground if you can do so safely.
+\n*  Do not touch electrical equipment if you are wet or standing in water."
+                    android:textSize="14dp"/>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
