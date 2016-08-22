@@ -14,5 +14,6 @@ you can also request a feature, make a pull request
 ## Android app
 
 <img width="350" src="http://i.imgur.com/JAQOMRT.png" />
+<img width="550" src="http://i.imgur.com/qyRCHn7.png" />
 ## Backend
  - python (flask) api
